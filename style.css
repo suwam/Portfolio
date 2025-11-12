@@ -147,7 +147,7 @@ nav a:hover { opacity: 1; background: color-mix(in oklab, var(--text) 6%, transp
 .projects { grid-template-columns: repeat(12, 1fr); }
 .project-card { grid-column: span 6; background: var(--panel); border: 1px solid #22283a; border-radius: var(--radius); overflow: clip; box-shadow: var(--shadow); display: grid; grid-template-rows: 160px auto; }
 .project-media { background: radial-gradient(500px 200px at 20% 20%, rgba(96,165,250,.25), transparent 40%), linear-gradient(135deg, #121726, #0e1320); border-bottom: 1px solid #22283a; display: grid; place-items: end start; padding: 18px; }
-.project-media .badge { background: rgb(228, 16, 16); padding: 6px 10px; border: 1px solid #2a3140; border-radius: 999px; font-size: 12px; }
+.project-media .badge { background: rgb(97, 156, 154); padding: 6px 10px; border: 1px solid #2a3140; border-radius: 999px; font-size: 12px; }
 .project-body { padding: 18px; display: grid; gap: 12px; }
 .project-title { font-weight: 800; font-size: 18px; }
 .project-actions { display: flex; gap: 10px; flex-wrap: wrap; }
