@@ -84,8 +84,8 @@
         <div class="reveal">
           <div class="card">
             <h3 style="margin-top:0">Who I am</h3>
-            <p>I’m a software engineer focused on building performant web apps with delightful UX. My specialties include modern JavaScript (ES202x), TypeScript, React, and clean CSS architecture. I care deeply about accessibility, performance, and developer experience.</p>
-            <p>When I’m not coding, I sketch interfaces, read about system design, and tinker with new tools.</p>
+            <p>I am a software engineer focused on building performant web apps with delightful UX. My specialties include modern JavaScript, TypeScript, React, and clean CSS architecture. I care deeply about accessibility, performance, and developer experience.</p>
+            <p>When I am not coding, I sketch interfaces, read about system design, and tinker with new tools.</p>
             <div class="grid mini">
               <div class="card mini"><strong>Location</strong><br><span class="muted">Kathmandu, Nepal</span></div>
               <div class="card mini"><strong>Open to</strong><br><span class="muted">Remote / Hybrid</span></div>
@@ -104,12 +104,12 @@
             <div class="chips">
               <span class="tag">HTML5</span>
               <span class="tag">CSS3</span>
-              <span class="tag">JavaScript (ES202x)</span>
-              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript </span>
+              <span class="tag">Figma</span>
               <span class="tag">React</span>
               <span class="tag">Node.js</span>
-              <span class="tag">Firebase</span>
-              <span class="tag">Git</span>
+              <span class="tag">Python</span>
+              <span class="tag">Flutter</span>
             </div>
           </div>
         </div>
@@ -162,17 +162,22 @@
   </div>
 </section>
 
-  <!-- Projects -->
+ <!-- Projects -->
 <section id="projects" class="section container">
   <h2 class="grad-title grad-underline">Projects</h2>
-  <p class="subtle grad-title ">Some of the work I have designed and developed.</p>
-  <div class="grid projects">
+  <p class="subtle grad-title">Some of the projects I’ve designed, developed, and loved building.</p>
+
+  <div class="grid projects" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+    
+    <!-- Project 1: Itinerary Voyager -->
     <article class="project-card reveal">
-      <div class="project-media"><span class="badge">Web App</span></div>
+      <div class="project-media" style="background: url('assets/itinerary.png') center/cover;">
+        <span class="badge">Application</span>
+      </div>
       <div class="project-body">
         <div class="project-title">Itinerary Voyager</div>
         <p class="muted">
-          A travel planner that generates scenic routes and day-wise plans using map data and preferences.
+          A travel planner that generates scenic routes and day-wise plans using map data and user preferences.
         </p>
         <div class="project-tags">
           <span class="tag">Flutter</span>
@@ -180,19 +185,62 @@
           <span class="tag">A* Routing</span>
         </div>
         <div class="project-actions">
-          <!-- Update this with your deployed site if you have one -->
-    
-
-          <!-- Correct GitHub link -->
           <a class="btn btn-outline" href="https://github.com/suwam/Itenary-Voyager" target="_blank" rel="noreferrer">
-            Source code
+            Source Code
           </a>
         </div>
       </div>
     </article>
+
+    <!-- Project 2: File Compressor -->
+    <article class="project-card reveal">
+       <div class="project-media" style="background: url('assets/file compression.png') center/cover;">
+        <span class="badge">C++ Tool</span>
+      </div>
+      <div class="project-body">
+        <div class="project-title">File Compressor</div>
+        <p class="muted">
+          A lossless compression tool built using Huffman Encoding to efficiently reduce text and data file sizes.
+        </p>
+        <div class="project-tags">
+          <span class="tag">C++</span>
+          <span class="tag">Algorithm</span>
+          <span class="tag">Huffman Encoding</span>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/suwam/File-Compressor" target="_blank" rel="noreferrer">
+            Source Code
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3: Maze Generator -->
+    <article class="project-card reveal">
+      <div class="project-media" style="background: url('assets/mazesolve.png') center/cover;">
+        <span class="badge">Web App</span>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Maze Generator</div>
+        <p class="muted">
+          A dynamic maze generation and solving visualizer built using the MERN stack and D3.js for real-time animations.
+        </p>
+        <div class="project-tags">
+          <span class="tag">MERN</span>
+          <span class="tag">D3.js</span>
+          <span class="tag">Visualization</span>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/suwam/Maze-Generator" target="_blank" rel="noreferrer">
+            Source Code
+          </a>
+        </div>
+      </div>
+    </article>
+
   </div>
-  
 </section>
+
 
 
 
@@ -235,7 +283,7 @@
     <div class="t-item reveal">
       <strong>Junior Software Engineer — PixelNest</strong>
       <div class="muted">Jan 2024 – Present · Remote</div>
-      <small>Built and maintained a design system; reduced UI defects by 35% through linting and visual tests.</small>
+      <small>Built and maintained a design system; reduced UI defects  through linting and visual tests.</small>
     </div>
 
    <!-- New: SaiKet Systems (Offer) -->

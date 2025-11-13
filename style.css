@@ -81,6 +81,7 @@ nav a:hover { opacity: 1; background: color-mix(in oklab, var(--text) 6%, transp
 .mobile-panel { display: none; }
 
 /* Hero with animated gradient */
+
 .hero {
   background: linear-gradient(-45deg, #1e3a8a, #60a5fa, #ef4444, #b91c1c);
   background-size: 400% 400%;
@@ -143,15 +144,114 @@ nav a:hover { opacity: 1; background: color-mix(in oklab, var(--text) 6%, transp
 .meter { height: 10px; background: #1a2030; border-radius: 999px; overflow: hidden; border: 1px solid #2a3140; }
 .meter > i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
 
-/* Projects */
-.projects { grid-template-columns: repeat(12, 1fr); }
-.project-card { grid-column: span 6; background: var(--panel); border: 1px solid #22283a; border-radius: var(--radius); overflow: clip; box-shadow: var(--shadow); display: grid; grid-template-rows: 160px auto; }
-.project-media { background: radial-gradient(500px 200px at 20% 20%, rgba(96,165,250,.25), transparent 40%), linear-gradient(135deg, #121726, #0e1320); border-bottom: 1px solid #22283a; display: grid; place-items: end start; padding: 18px; }
-.project-media .badge { background: rgb(97, 156, 154); padding: 6px 10px; border: 1px solid #2a3140; border-radius: 999px; font-size: 12px; }
-.project-body { padding: 18px; display: grid; gap: 12px; }
-.project-title { font-weight: 800; font-size: 18px; }
-.project-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+/* ---------- PROJECTS SECTION ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: var(--panel);
+  border: 1px solid #22283a;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+  border-color: var(--accent);
+}
+
+.project-media {
+  position: relative;
+  height: 180px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-bottom: 1px solid #2a3140;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 16px;
+  color: #fff;
+}
+
+.project-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent 60%);
+}
+
+.project-media .badge {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  z-index: 1;
+}
+
+.project-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.project-body p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-actions .btn-outline {
+  border-color: #2a3140;
+  background: transparent;
+  color: var(--text);
+}
+
+.project-actions .btn-outline:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+  border-color: transparent;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Experience */
 .timeline { position: relative; padding-left: 28px; }
@@ -165,7 +265,7 @@ nav a:hover { opacity: 1; background: color-mix(in oklab, var(--text) 6%, transp
 .contact-grid { grid-template-columns: 1.2fr 1fr; }
 form { display: grid; gap: 12px; }
 .field { display: grid; gap: 6px; }
-.input { background: #0f1420; border: 1px solid #26304a; border-radius: 12px; color: var(--text); padding: 12px 14px; }
+.input { background: #080808; border: 1px solid #26304a; border-radius: 12px; color:whitesmoke; padding: 12px 14px; }
 textarea.input { min-height: 140px; resize: vertical; }
 
 /* Footer */
